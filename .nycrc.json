@@ -1,0 +1,21 @@
+{
+  "check-coverage": true,
+  "all": true,
+  "extends": "@istanbuljs/nyc-config-typescript",
+  "report-dir": "./coverage/nyc",
+  "temp-dir": "./.nyc_output",
+  "cache": false,
+  "reporter": ["none"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "cypress/**/*.*",
+    "**/*.d.ts",
+    "**/*.cy.tsx",
+    "**/*.cy.ts",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}
