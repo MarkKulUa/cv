@@ -1,0 +1,39 @@
+$color-primary: #21C58C;
+$color-primary-light: #d3f4e8;
+$color-primary-medium-light: #b4ddce;
+$color-primary-medium: #53caa0;
+$color-error: #f82626;
+$color-background: #fcfcfc;
+$color-text-light: #939493;
+$color-disable-background: #eff1f4;
+$color-text-deep: #2b2c2b;
+$color-text-title-light: #5d605d;
+$color-text-logo: #0000009a;
+$color-white: #ffffff;
+$color-border: #c9c9c9;
+$color-border-focus-light: #ebe7e7;
+
+$content-width: 1300px;
+$mobile-content-width: 310px;
+$tablet-content-width: 720px;
+
+$laptop-width: 1200px;
+$tablet-width: 768px;
+$mobile-width: 320px;
+
+$header-height: 126px;
+$footer-height: 90px;
+$header-mobile-height: 90px;
+
+$anim-slide-up: slide-up;
+
+@keyframes slide-up {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

@@ -1,0 +1,20 @@
+@use 'sass:math';
+
+@mixin font($size, $height, $style: normal, $weight: 400) {
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin media-tablet {
+  @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+      @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (min-width: $mobile-width) and (max-width: ($tablet-width - 1)) {
+      @content;
+  }
+}
