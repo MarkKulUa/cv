@@ -1,4 +1,4 @@
-import { ICardFeature, TAppLanguage } from './types';
+import {ICardFeature, ICvStudyCard, TAppLanguage} from './types';
 
 export const DEFAULT_LANGUAGE: TAppLanguage = 'en';
 export const LOCALES: { [key in TAppLanguage]: string } = {
@@ -116,3 +116,29 @@ export const resizedTextFeature = ['Google Chrome support', 'Private routes, 404
 export const NUM_OF_PARTICLES = 40;
 
 export const RICKANDMORTYAPI_BASE_URL = 'https://rickandmortyapi.com/graphql';
+
+export const StudyData_react: ICvStudyCard[] = [
+  {
+    img: 'https://www.linkpicture.com/q/react.jpeg',
+    name: 'React Js final project screen',
+    description: '',
+  },
+  {
+    img: 'https://www.linkpicture.com/q/react_cert.jpeg',
+    name: 'React Js certificate',
+    description: '',
+  },
+];
+
+export const StudyData_fe: ICvStudyCard[] = [
+  {
+    img: 'https://www.linkpicture.com/q/fe_project.jpeg',
+    name: 'Frontend Js final project screen',
+    description: '',
+  },
+  {
+    img: 'https://www.linkpicture.com/q/fe_cert.jpeg',
+    name: 'Frontend Js certificate',
+    description: '',
+  },
+];

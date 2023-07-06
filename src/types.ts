@@ -84,3 +84,9 @@ export interface IMenuContext {
   isOpen: boolean;
   setOpenMobileMenu: Dispatch<SetStateAction<boolean>>;
 }
+
+export interface ICvStudyCard {
+  img: string;
+  name: string;
+  description: string;
+}

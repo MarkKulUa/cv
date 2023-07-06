@@ -1,0 +1,14 @@
+@import '../scss/style.scss';
+
+.authPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: $content-width;
+
+  @include media-mobile {
+    width: $mobile-content-width;
+    height: calc(100vh - 200px);
+  }
+}

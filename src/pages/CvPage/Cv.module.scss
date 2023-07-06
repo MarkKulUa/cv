@@ -1,0 +1,458 @@
+@import '../../scss/style.scss';
+//body, input[type="text"], button {
+//  //font-family: 'Arial', sans-serif;
+//  //font-family: 'Helvetika', sans-serif;
+//}
+
+main {
+  @include font($size: 2.5rem, $height: 110%);
+}
+
+
+//h1, h2, h3 {
+//  text-align: left;
+//
+//  animation: $anim-slide-up 1s ease;
+//
+//  @include media-mobile {
+//    text-align: center;
+//  }
+//}
+//
+//h1 {
+//  padding: 50px 2px 2px;
+//  @include font($size: 4.6rem, $height: 55px, $style: normal, $weight: 600);
+//
+//  @include media-mobile {
+//    text-align: center;
+//    margin-top: 25px;
+//  }
+//}
+
+//HEADER
+header {
+  position: sticky;
+  height: $header-height + 50px !important;
+}
+
+.fioWrapper {
+  width: $content-width;
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  justify-content: space-between;
+  min-height: 180px;
+
+  @include media-tablet {
+    width: $tablet-content-width;
+  }
+
+  @include media-mobile {
+    width: $mobile-content-width;
+    flex-wrap: wrap;
+
+  }
+}
+
+.fioContainer {
+  text-align: left;
+
+  .cvTitle {
+    padding: 50px 2px 2px;
+    @include font($size: 4.6rem, $height: 55px, $style: normal, $weight: 600);
+    animation: $anim-slide-up 1s ease;
+
+    @include media-mobile {
+      text-align: center;
+      margin-top: 70px;
+    }
+  }
+
+  .avatarFhoto {
+
+  }
+
+  .cvSubtitle {
+    padding: 2px 3px 7px;
+    color: $color-text-light;
+  }
+
+  .socialContainer {
+    display: flex;
+    align-items: start;
+    @include font($size: 2.7rem, $height: 110%, $style: normal, $weight: 600);
+    color: $color-text-logo;
+
+    .logo {
+      fill: $color-primary;
+      width: 32px;
+    }
+
+    .social {
+      transition: .6s;
+
+      &:hover {
+        color: $color-text-logo;
+        cursor: pointer;
+      }
+    }
+
+    @include media-mobile {
+      margin-bottom: 20px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.languageWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.langSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.languageContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cvWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: $content-width;
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: $tablet-content-width;
+  }
+
+  @include media-mobile {
+    width: $mobile-content-width;
+  }
+}
+
+.cvLayout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto;
+
+  @include media-tablet {
+    margin: 30px auto;
+  }
+
+  @include media-mobile {
+    margin: 20px auto;
+  }
+}
+
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  padding: 50px 2px 2px;
+
+  @include media-mobile {
+    display: none;
+  }
+}
+.avatarContainer img{
+  width: 15rem;
+  height: 15rem;
+  flex: 0 0 11rem;
+  border-radius: 50%;
+  border: 5px solid $color-white;
+  box-shadow: 10px 10px 20px 0 rgba(0,0,0,.3);
+  margin-right: 2rem;
+
+  &:hover {
+    transform: translateX(15%) scale(1.55);
+    transition: transform 1s ease-out;
+  }
+}
+
+.languageOwn {
+  p:first-child {
+    font-weight: bold;
+  }
+}
+
+.devBlock {
+  width: 800px;
+
+  @include media-tablet {
+    width: 700px;
+  }
+
+  @include media-mobile {
+    width: 300px;
+  }
+}
+
+//MAIN
+.contentWrapper {
+  width: $content-width;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @include media-tablet {
+    width: $tablet-content-width;
+  }
+
+  @include media-mobile {
+    width: $mobile-content-width;
+    flex-wrap: wrap;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 10px;
+
+  a {
+    text-decoration-thickness: from-font;
+    color: $color-text-light;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-style: solid;
+    }
+  }
+}
+
+
+.title {
+  text-align: left;
+  color: $color-text-title-light;
+  @include font($size: 3rem, $height: 32px, $style: normal, $weight: 500);
+
+  margin-left: -10px;
+  margin-bottom: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $color-text-light;
+  animation: $anim-slide-up 1s ease;
+
+  @include media-mobile {
+    margin-top: 10px;
+  }
+}
+
+.subTitle {
+  text-align: left;
+  color: $color-text-title-light;
+  @include font($size: 2.5rem, $height: 24px, $style: normal, $weight: 800);
+  margin: 10px 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $color-text-light;
+  animation: $anim-slide-up 1s ease;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
+//.summary div, .certifications div, .experience div {
+//  //display: flex;
+//  //flex-direction: column;
+//  //margin-top:10px;
+//  margin-bottom:10px;
+//  //padding: 10px;
+//  //justify-content: space-between;
+//  ////justify-content: flex-start;
+//}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-around;
+  align-items: flex-start;
+  gap: 2px;
+  //gap: 30px;
+  //margin: 30px auto;
+  //flex-direction: column;
+  //@include media-tablet {
+  //  flex-direction: column;
+  //}
+  //
+  //@include media-mobile {
+  //  flex-direction: column;
+  //}
+
+  ul {
+    margin-left: 20px;
+  }
+}
+
+.checkedList li {
+  margin-bottom: 5px;
+}
+
+.features li {
+  position: relative;
+}
+
+.features li::before {
+  content: '';
+  display: block;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  background-color: $color-primary-medium;
+  transform: translate(-50%, 20%);
+  position: absolute;
+  top: 0.5em;
+  left: -1em;
+}
+
+//Education
+.studyPeriod {
+  color: $color-text-light;
+  font-size: 0.7em;
+}
+
+.studyOrganization {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.studyDescription {
+  margin-bottom: 5px;
+
+  & ul {
+    margin-bottom: 5px;
+  }
+
+  & li {
+    padding: 2px 0;
+  }
+}
+
+.studySkills {
+  @include font($size: 1.5rem, $height: 14px, $style: normal, $weight: 500);
+  color: $color-text-title-light;
+  margin-bottom: 5px;
+}
+
+.studyImg img {
+  height: 100px;
+  margin-right: 10px;
+
+  &:hover {
+    position: absolute;
+    height: 80%;
+    margin: -40px auto;
+    @extend %box-shadow-1;
+    animation: $anim-slide-up 1s ease;
+    opacity: 1;
+    z-index: 100;
+  }
+}
+
+
+.experienceCompany {
+  color: $color-text-light;
+  font-size: 0.7em;
+}
+
+.GraphContainerLayout {
+  max-width: 550px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 6px 2px rgba(43, 71, 93, 0.1);
+  padding: 30px 10px;
+}
+
+.GraphContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.GraphTitle {
+  @include font($size: 2.3rem, $height: 22px, $style: normal, $weight: 600);
+  color: $color-text-title-light;
+}
+
+.TechContainer {
+  margin: 50px auto;
+  max-width: 1100px;
+}
+
+.different {
+  color: $color-primary;
+}
+
+.CourseInfo {
+  display: flex;
+  flex-direction: row;
+
+  @include media-mobile {
+    flex-direction: column;
+  }
+
+  .imgConatiner {
+    min-width: 400px;
+    border-radius: 10px;
+
+    @include media-mobile {
+      min-width: 300px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .textCourseInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px 30px;
+
+    .courseTitle {
+      text-align: left;
+      @include font($size: 3.2rem, $height: 35px, $style: normal, $weight: 700);
+    }
+
+    .textRegular {
+      text-align: justify;
+      color: $color-text-light;
+    }
+  }
+}
+
+
+.hide {
+  top: -2*$header-height;
+}

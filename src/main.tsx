@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 import './scss/style.scss';
 
 class GraphiApp extends React.Component {
@@ -13,7 +14,7 @@ class GraphiApp extends React.Component {
 
   render() {
     const { loading } = this.state;
-    return null;
+    return loading ? null : <App />;
   }
 }
 

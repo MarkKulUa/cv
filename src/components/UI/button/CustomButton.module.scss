@@ -1,0 +1,20 @@
+@import '../../../scss/style.scss';
+
+.customBtn {
+  display: flex;
+  justify-content: center;
+  font-family: 'Mulish', sans-serif;
+  background-color: $color-primary;
+  width: 100%;
+  height: 60px;
+  @include font($size: 2rem, $height: 20px, $style: normal, $weight: 600);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  color: $color-white;
+  transition: .5s;
+
+  &:hover {
+    background-color: $color-primary-medium;
+  }
+}
