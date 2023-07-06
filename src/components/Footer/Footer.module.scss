@@ -1,0 +1,42 @@
+@import '../../scss/style.scss';
+
+.footer {
+  .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: $content-width;
+    margin: 0 auto;
+
+    @include media-tablet {
+      width: $tablet-content-width;
+    }
+  
+    @include media-mobile {
+      width: $mobile-content-width;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .courseLogo {
+      width: 80px;
+      transition: .5s;
+  
+      &:hover {
+        filter: brightness(0) saturate(100%) invert(89%) sepia(3%) saturate(1638%) hue-rotate(102deg) brightness(109%) contrast(91%);
+      }
+    }
+  
+    .githubLinkAuthor, .githubLink, .githubLinkTarget {
+      transition: .7s;
+    }
+  
+    .githubLinkAuthor:hover, .githubLink:hover .githubLinkTarget {
+      color: $color-text-logo;
+    }
+  
+    .authorsLinks {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}

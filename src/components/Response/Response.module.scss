@@ -1,0 +1,44 @@
+@use 'sass:math';
+@import '../../scss/style.scss';
+
+
+.response {
+  width: 50%;
+  @include font($size: 1.5rem, $height: 20px, $style: normal, $weight: 300);
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: 10px;
+  padding: 10px;
+  @extend %box-shadow-1;
+  transition: all .5s ease;
+
+  .responseHeader {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+    .contentBtn {
+      @extend %primary-btn;
+    }
+  }
+
+  .responseData {
+    animation: $anim-slide-up .7s ease;
+  }
+
+  h1 {
+    @include font($size: 1.9rem, $height: 25px, $style: normal, $weight: 400);
+    color: $color-text-logo;
+  }
+
+  .subText {
+    text-align: center;
+    padding: 10px 10px 30px;
+    @include font($size: 1.5rem, $height: 22px, $style: normal, $weight: 500);
+    color: $color-text-light;
+  }
+
+  @include media-mobile {
+    width: 90%;
+  }
+}

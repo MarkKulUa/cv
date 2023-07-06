@@ -1,0 +1,148 @@
+@import '../../scss/style.scss';
+
+.welcomeWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: $content-width;
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: $tablet-content-width;
+  }
+
+  @include media-mobile {
+    width: $mobile-content-width;
+  }
+}
+
+.welcomeLayout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto;
+
+  @include media-tablet {
+    margin: 30px auto;
+  }
+
+  @include media-mobile {
+    margin: 20px auto;
+  }
+}
+
+.welcomeTitle {
+  text-align: center;
+  padding: 50px 10px 50px;
+  @include font($size: 4.6rem, $height: 55px, $style: normal, $weight: 600);
+  animation: $anim-slide-up 1s ease;
+}
+
+.welcomeSubtitle {
+  text-align: center;
+  padding: 10px 10px 30px;
+  @include font($size: 1.5rem, $height: 22px, $style: normal, $weight: 500);
+  color: $color-text-light;
+}
+
+.devBlock {
+  width: 800px;
+
+  @include media-tablet {
+    width: 700px;
+  }
+
+  @include media-mobile {
+    width: 300px;
+  }
+}
+
+.Features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin: 30px auto;
+
+  @include media-tablet {
+    flex-direction: column;
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+
+.GraphContainerLayout {
+  max-width: 550px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 6px 2px rgba(43, 71, 93, 0.1);
+  padding: 30px 10px;
+}
+
+.GraphContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.GraphTitle {
+  @include font($size: 2.3rem, $height: 22px, $style: normal, $weight: 600);
+  color: $color-text-title-light;
+}
+
+.TechContainer {
+  margin: 50px auto;
+  max-width: 1100px;
+}
+
+.different {
+  color: $color-primary;
+}
+
+.CourseInfo {
+  display: flex;
+  flex-direction: row;
+
+  @include media-mobile {
+    flex-direction: column;
+  }
+
+  .imgConatiner {
+    min-width: 400px;
+    border-radius: 10px;
+
+    @include media-mobile {
+      min-width: 300px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .textCourseInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px 30px;
+
+    .courseTitle {
+      text-align: left;
+      @include font($size: 3.2rem, $height: 35px, $style: normal, $weight: 700);
+    }
+
+    .textRegular {
+      text-align: justify;
+      color: $color-text-light;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  color: $color-text-title-light;
+  @include font($size: 3rem, $height: 32px, $style: normal, $weight: 500);
+}

@@ -1,0 +1,30 @@
+@import '../../scss/style.scss';
+
+.fieldCompContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  border-top: 1px solid $color-primary-medium-light;
+  padding: 17px 0;
+
+  .btn {
+    @extend %xs-button;
+    margin-left: 10px;
+  }
+
+  .field {
+    @include font($size: 1.7rem, $height: 110%, $style: bold, $weight: 800);
+    color: $color-text-logo;
+  }
+
+  .varContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: center;
+    gap: 5px;
+    margin: 4px 0 4px 10px;
+  }
+}

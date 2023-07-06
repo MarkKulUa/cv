@@ -1,0 +1,31 @@
+@use 'sass:math';
+@import '../../scss/style.scss';
+
+.mainPage {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: nowrap;
+  gap: 20px;
+
+  .editorContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    @extend %box-shadow-1;
+    overflow: hidden;
+    border: 1px solid $color-border;
+    border-radius: 10px;
+    height: fit-content;
+
+    @include media-mobile {
+      width: 90%;
+    }
+  }
+
+  @include media-mobile {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 30px;
+  }
+}

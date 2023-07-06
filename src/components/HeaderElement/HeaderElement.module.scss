@@ -1,0 +1,17 @@
+@import '../../scss/style.scss';
+
+.liContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  
+  input {
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+    @include font($size: 1.3rem, $height: 20px, $style: normal, $weight: 500);
+  }
+}

@@ -1,0 +1,26 @@
+@use 'sass:math';
+@import '../../scss/style.scss';
+
+.tabs {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  @include font($size: 1.5rem, $height: 20px, $style: normal, $weight: 300);
+  background-color: $color-white;
+
+  .tabsButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include font($size: 1.6rem, $height: 20px, $style: normal, $weight: 400);
+    height: 50px;
+  
+    .btn {
+      @extend %header-btns;
+    }
+  
+    .active {
+      background-color: $color-primary-light;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../scss/style.scss';
+
+.headers {
+  width: 100%;
+  min-height: rem(50);
+  background-color: #eff1f4;
+}
+
+.headersContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+  flex: 1;
+  padding: 1rem;
+  border-width: 1px;
+  border-color: #0000009a;
+  &:focus {
+    border-color: #21C58C;
+  }
+  height: 100%;
+}
+
+.contentUl {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 1.2rem;
+  overflow: auto;
+}
+
+.buttonsContainer{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.btn {
+  @extend %primary-btn
+}

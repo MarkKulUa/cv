@@ -1,0 +1,103 @@
+@import '../../scss/style.scss';
+
+.menuMobile {
+  display: flex;
+  position: fixed;
+  padding-top: 70px;
+  flex-direction: column;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: -700px;
+  bottom: 0;
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0.9);
+  gap: 35px;
+  transition: .5s;
+
+  .mobileNavWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      @include font($size: 2.7rem, $height: 110%, $style: normal, $weight: 600);
+      color: $color-text-light;
+    
+      .logo {
+        fill: $color-primary;
+        width: 50px;
+      }
+    }
+
+    .BaseLayout {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: inherit;
+
+      .languageContainer {
+        margin-left: 30px;
+      }
+
+      .authContainer {
+        display: flex;
+        flex-direction: column;
+        gap: inherit;
+      }
+
+      .auth {
+        border-radius: 20px;
+        background-color: $color-text-light;
+        padding: 7px 15px;
+        color: $color-text-deep;
+      }
+      
+      .homeNav, .auth, .mainNav {
+        transition: .6s;
+      
+        &:hover {
+          color: $color-text-logo;
+        }
+      }
+    }
+  }
+}
+
+.open {
+  animation: moveToRight .5s ease-in-out;
+  left: 0;
+}
+
+
+@keyframes moveToRight {
+  0% {
+      transform: translateX(-400px);
+  }
+  100% {
+      transform: translateX(0px);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+      transform: translateX(0px);
+      left: 0px;
+  }
+  100% {
+      transform: translateX(-400px);
+      left: -400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuMobile {
+    display: none;
+  }
+}

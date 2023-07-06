@@ -1,0 +1,96 @@
+@import '../../scss/style.scss';
+
+.contentWrapper {
+  width: $content-width;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @include media-tablet {
+    width: $tablet-content-width;
+  }
+
+  @include media-mobile {
+    width: $mobile-content-width;
+    flex-wrap: wrap;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  @include font($size: 2.7rem, $height: 110%, $style: normal, $weight: 600);
+  color: $color-text-logo;
+
+  .logo {
+    fill: $color-primary;
+    width: 50px;
+  }
+
+  @include media-mobile {
+    margin-left: 120px;
+  }
+}
+
+.languageContainer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.BaseLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+    @include media-mobile {
+      display: none;
+    }
+}
+
+.NavigationLayout {
+  justify-content: space-around;
+  width: 30%;
+}
+
+.authContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.auth {
+  border-radius: 20px;
+  background-color: $color-disable-background;
+  padding: 7px 20px;
+  font-family: 'Mulish', sans-serif;
+}
+
+.homeNav, .auth, .mainNav {
+  transition: .6s;
+
+  &:hover {
+    color: $color-text-logo;
+    cursor: pointer;
+  }
+}
+
+.hide {
+  top: -2*$header-height;
+}
+
+.burgerWrap {
+  position: absolute;
+  display: flex;
+  left: 30px;
+  top: 30px;
+  transition: .7s;
+  z-index: 200;
+}
+
+.animation {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,29 @@
+@use 'sass:math';
+@import '../../scss/style.scss';
+
+.editor {
+  display: flex;
+  @include font($size: 1.5rem, $height: 20px, $style: normal, $weight: 300);
+
+  .textareaContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(5);
+    width: 100%;
+  }
+
+  .textareaContent {
+    width: 100%;
+    color: inherit;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: $color-white;
+    overflow: hidden;
+    padding: 10px;
+
+    &:focus {
+      outline: 1px solid $color-primary-light;
+    }
+  }
+}

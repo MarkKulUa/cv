@@ -1,0 +1,28 @@
+
+@import '../../scss/style.scss';
+
+@include media-mobile {
+  .burger {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 32px;
+    height: 27px;
+    padding-left: 0px;
+    transition: .7s;
+    z-index: 50;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+  }
+
+  .burgerMenu {
+    position: relative;
+    height: 3px;
+    background-color: $color-primary;
+    width: 32px;
+    margin: 3px;
+  }
+}
