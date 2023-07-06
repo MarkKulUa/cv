@@ -1,4 +1,4 @@
-import {ICardFeature, ICvStudyCard, TAppLanguage} from './types';
+import { ICardFeature, ICvStudyCard, TAppLanguage } from './types';
 
 export const DEFAULT_LANGUAGE: TAppLanguage = 'en';
 export const LOCALES: { [key in TAppLanguage]: string } = {

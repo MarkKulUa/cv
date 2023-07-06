@@ -32,20 +32,6 @@ export const Footer = () => {
           >
             {t('Mark')}
           </a>
-          <a
-            href="https://github.com/alex5667"
-            className={styles.githubLinkAuthor}
-            title={'Alex ' + (t('GitHub repo') || 'GitHub repo')}
-          >
-            {t('Alex')}
-          </a>
-          <a
-            href="https://github.com/HolyOly"
-            className={styles.githubLinkAuthor}
-            title={'Olga ' + (t('GitHub repo') || 'GitHub repo')}
-          >
-            {t('Olga')}
-          </a>
         </div>
       </div>
     </footer>

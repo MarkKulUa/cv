@@ -2,12 +2,7 @@ import React from 'react';
 import { ReactComponent as WelcomeIcon } from '../../assets/svg/welcome.svg';
 import styles from './Welcome.module.scss';
 import { AuthorBlock } from '../../components/AuthorBlock/AuthorBlock';
-import {
-  MarkInfo,
-  FeaturesData_1,
-  FeaturesData_2,
-  FeaturesData_3,
-} from '../../constants';
+import { MarkInfo, FeaturesData_1, FeaturesData_2, FeaturesData_3 } from '../../constants';
 import { CardFeature } from '../../components/CardBlock/Card';
 import { Trans, useTranslation } from 'react-i18next';
 
@@ -68,7 +63,6 @@ export const WelcomePage = () => {
                 since 2013
               </Trans>
             </h3>
-            <p className={styles.textRegular}>{t('rssCourseText')}</p>
           </div>
         </section>
       </div>
