@@ -41,6 +41,9 @@ export const CvPage = () => {
               <Link className={styles.social} to="tel:+48604357902">
                 <PhoneLogo className={styles.logo} />
               </Link>
+              <div className={` ${styles.mobileOnly} ${styles.social} `}>
+                <LangSwitcher />
+              </div>
             </div>
           </div>
           <div className={styles.avatarContainer}>
@@ -53,7 +56,7 @@ export const CvPage = () => {
                 {t('Ukrainian')} - {t('native')}, {t('English')} - B1, {t('Polish')} - A1
               </div>
             </div>
-            <div className={styles.languageContainer}>
+            <div className={` ${styles.mobileHidden} ${styles.languageContainer} `}>
               <LangSwitcher />
             </div>
           </div>
@@ -99,12 +102,12 @@ export const CvPage = () => {
                 <li>{t('Programming Languages')}: PHP, JavaScript/ES6, TypeScript</li>
                 <li>{t('Back-end')}: Laravel, Lumen, Phpunit</li>
                 <li>
-                  Front-end: ReactJs, TypeScript, VueJs, Bootstrap, ES6, SCSS, Sass, React
+                  {t('Front-end')}: ReactJs, TypeScript, VueJs, Bootstrap, ES6, SCSS, Sass, React
                   testing-library
                 </li>
-                <li>Database: PostgreSQL, MySQL, MongoDB, ElasticSearch</li>
-                <li>Tools: Jira, Trello, Miro, Slack, Git, Bitbucket, PHPStorm, Figma</li>
-                <li>PM Processes: Agile, Scrum</li>
+                <li>{t('Database')}: PostgreSQL, MySQL, MongoDB, ElasticSearch</li>
+                <li>{t('Tools')}: Jira, Trello, Miro, Slack, Git, Bitbucket, PHPStorm, Figma</li>
+                <li>{t('PM Processes')}: Agile, Scrum</li>
                 <li>
                   {t('Other technologies')}: Zabbix, RabbitMq, ELK, Composer, Npm, Gulp, Webpack, Vite
                 </li>
@@ -157,7 +160,7 @@ export const CvPage = () => {
                       href="https://rs-graphiql-app.netlify.app"
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="link"
+                      title={t('link') || ''}
                     >
                       {t('link')}
                     </a>
@@ -277,9 +280,9 @@ export const CvPage = () => {
               </div>
               <div className={styles.studyDescription}>
                 <ul>
-                  <li>{t('"SOLID Code in Laravel"')}</li>
-                  <li>{t('"PhpUnit in Laravel"')}</li>
-                  <li>{t('"Queues in Laravel"')}</li>
+                  <li>`{t('SOLID Code in Laravel')}`</li>
+                  <li>`{t('PhpUnit in Laravel')}`</li>
+                  <li>`{t('Queues in Laravel')}`</li>
                 </ul>
               </div>
               <div className={styles.studySkills}>
@@ -301,9 +304,9 @@ export const CvPage = () => {
                   href="https://www.nmu.org.ua/ua/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title={t('National Technical University "Dnipro Polytechnic"') || ''}
+                  title={t('National Technical University `Dnipro Polytechnic`') || ''}
                 >
-                  {t('National Technical University "Dnipro Polytechnic"')}
+                  {t('National Technical University `Dnipro Polytechnic`')}
                 </a>
               </div>
               <div className={styles.studyDescription}>

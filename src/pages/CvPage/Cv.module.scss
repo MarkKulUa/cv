@@ -8,6 +8,10 @@ main {
 header {
   position: sticky;
   height: $header-height + 50px !important;
+
+  @include media-mobile {
+    height: $header-height + 90px !important;
+  }
 }
 
 .fioWrapper {
@@ -61,6 +65,7 @@ header {
     .logo {
       fill: $color-primary;
       width: 32px;
+      max-height: 29px;
     }
 
     .social {
@@ -166,6 +171,10 @@ header {
   &:hover {
     transform: translateX(15%) scale(1.55);
     transition: transform 1s ease-out;
+
+    @include media-mobile {
+      transform: translateX(5%) scale(1.25);
+    }
   }
 }
 
@@ -338,4 +347,19 @@ header {
 
 .hide {
   top: -2*$header-height;
+}
+
+.mobileOnly{
+  display: none;
+
+  @include media-mobile {
+    display: block;
+  }
+}
+
+.mobileHidden {
+
+  @include media-mobile {
+    display: none;
+  }
 }
