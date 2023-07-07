@@ -15,8 +15,8 @@ export const CvPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
-      <header className={`${scrollDirection === 'down' ? styles.hide : 'show'}`} id="header">
+    <div  id="top">
+      <header className={`${scrollDirection === 'down' ? styles.hide : 'show'}`}>
         <div className={styles.fioWrapper}>
           <div className={styles.fioContainer}>
             <h1 className={styles.cvTitle}>{t('Mark Kulishov')}</h1>
@@ -427,7 +427,7 @@ export const CvPage = () => {
               </ul>
             </div>
           </section>
-            <a href="#header"  className={` ${styles.toTopBtnContainer} ${scrollDirection !== 'down' ? styles.hide : 'show'} `}>
+            <a href="#top"  className={` ${styles.toTopBtnContainer} ${scrollDirection !== 'down' ? styles.hide : 'show'} `}>
               <div className={styles.arrow}></div>
             </a>
         </div>
