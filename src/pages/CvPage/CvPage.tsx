@@ -16,7 +16,7 @@ export const CvPage = () => {
 
   return (
     <div>
-      <header className={`${scrollDirection === 'down' ? styles.hide : 'show'}`}>
+      <header className={`${scrollDirection === 'down' ? styles.hide : 'show'}`} id="header">
         <div className={styles.fioWrapper}>
           <div className={styles.fioContainer}>
             <h1 className={styles.cvTitle}>{t('Mark Kulishov')}</h1>
@@ -68,15 +68,24 @@ export const CvPage = () => {
             <h2 className={styles.title}>{t('Summary')}</h2>
             <div className={styles.features}>
               <ul className={styles.summaryList}>
-                <li>{t('Proactive and motivated Full Stack Developer with technical education')}.</li>
                 <li>
-                  {t('I have a solid knowledge of')} PHP, Laravel, JavaScript, TypeScript, and Vue.js.
+                  {t('Proactive and motivated Full Stack Developer with technical education')}.
                 </li>
                 <li>
-                  {t('I`m constantly striving to learn new technologies and always do my best with every new challenge')}.
+                  {t('I have a solid knowledge of')} PHP, Laravel, JavaScript, TypeScript, and
+                  Vue.js.
                 </li>
                 <li>
-                  {t('Overall 10 years of work experience for top Ukrainian Bank, US and Canadian clients/companies, and Ukrainian private customers')}.
+                  {t(
+                    'I`m constantly striving to learn new technologies and always do my best with every new challenge'
+                  )}
+                  .
+                </li>
+                <li>
+                  {t(
+                    'Overall 10 years of work experience for top Ukrainian Bank, US and Canadian clients/companies, and Ukrainian private customers'
+                  )}
+                  .
                 </li>
               </ul>
             </div>
@@ -109,7 +118,8 @@ export const CvPage = () => {
                 <li>{t('Tools')}: Jira, Trello, Miro, Slack, Git, Bitbucket, PHPStorm, Figma</li>
                 <li>{t('PM Processes')}: Agile, Scrum</li>
                 <li>
-                  {t('Other technologies')}: Zabbix, RabbitMq, ELK, Composer, Npm, Gulp, Webpack, Vite
+                  {t('Other technologies')}: Zabbix, RabbitMq, ELK, Composer, Npm, Gulp, Webpack,
+                  Vite
                 </li>
               </ul>
             </div>
@@ -155,18 +165,18 @@ export const CvPage = () => {
               <div className={styles.studyDescription}>
                 <ul>
                   <li>
-                    {t('Final project deploy')}
+                    {t('Final project deploy')} &nbsp;
                     <a
                       href="https://rs-graphiql-app.netlify.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       title={t('link') || ''}
                     >
-                      {t('link')}
+                      { t('link') }
                     </a>
                   </li>
                   <li>
-                    {t('Certificate')}
+                    {t('Certificate')} &nbsp;
                     <a
                       href="https://app.rs.school/certificate/lsw7hwal"
                       target="_blank"
@@ -177,13 +187,16 @@ export const CvPage = () => {
                     </a>
                   </li>
                   <li>
-                    {t('The 28 challenging steps/tasks, 12-weeks ride, more than 10 coding projects')}.
+                    {t(
+                      'The 28 challenging steps/tasks, 12-weeks ride, more than 10 coding projects'
+                    )}
+                    .
                   </li>
                 </ul>
               </div>
               <div className={styles.studySkills}>
-                <span>{t('Skills')}</span>: React testing library · React Hooks · React Forms · GraphQl Api
-                · Redux · SSR · SSG · React.js · REST APIs
+                <span>{t('Skills')}</span>: React testing library · React Hooks · React Forms ·
+                GraphQl Api · Redux · SSR · SSG · React.js · REST APIs
               </div>
               <div className={styles.studyImg}>
                 {StudyData_react.map((item, i) => (
@@ -199,7 +212,9 @@ export const CvPage = () => {
                 />
                 {t('JS/Frontend Development Course')}
               </h3>
-              <div className={styles.studyPeriod}>{t('Sep')} 2022 - {t('Mar')} 2023</div>
+              <div className={styles.studyPeriod}>
+                {t('Sep')} 2022 - {t('Mar')} 2023
+              </div>
               <div className={styles.studyOrganization}>
                 <a
                   href="https://rs.school/index.html"
@@ -222,7 +237,7 @@ export const CvPage = () => {
               <div className={styles.studyDescription}>
                 <ul>
                   <li>
-                    {t('Tasks project deploy')}
+                    {t('Tasks project deploy')} &nbsp;
                     <a
                       href="https://deft-mooncake-b88ac0.netlify.app"
                       target="_blank"
@@ -233,25 +248,23 @@ export const CvPage = () => {
                     </a>
                   </li>
                   <li>
-                    Certificate{' '}
+                    {t('Certificate')} &nbsp;
                     <a
                       href="https://app.rs.school/certificate/dk5lmpv5"
                       target="_blank"
                       rel="noopener noreferrer"
                       title={t('link') || ''}
                     >
-                      link
+                      {t('link')}
                     </a>
                   </li>
-                  <li>
-                    {t('The_63_challenging_steps_tasks...')}
-                  </li>
+                  <li>{t('The_63_challenging_steps_tasks...')}</li>
                 </ul>
               </div>
               <div className={styles.studySkills}>
-                <span>{t('Skills')}</span>: Front-End Development · Vite · npm · SCSS · JSON · ESLint ·
-                Styled Components · Figma · Bash · ECMAScript · ES6 · GitHub · Jest · TypeScript ·
-                SASS · JavaScript · HTML · CSS · Webpack
+                <span>{t('Skills')}</span>: Front-End Development · Vite · npm · SCSS · JSON ·
+                ESLint · Styled Components · Figma · Bash · ECMAScript · ES6 · GitHub · Jest ·
+                TypeScript · SASS · JavaScript · HTML · CSS · Webpack
               </div>
               <div className={styles.studyImg}>
                 {StudyData_fe.map((item, i) => (
@@ -280,14 +293,14 @@ export const CvPage = () => {
               </div>
               <div className={styles.studyDescription}>
                 <ul>
-                  <li>`{t('SOLID Code in Laravel')}`</li>
-                  <li>`{t('PhpUnit in Laravel')}`</li>
-                  <li>`{t('Queues in Laravel')}`</li>
+                  <li>&quot;{t('SOLID Code in Laravel')}&quot;</li>
+                  <li>&quot;{t('PhpUnit in Laravel')}&quot;</li>
+                  <li>&quot;{t('Queues in Laravel')}&quot;</li>
                 </ul>
               </div>
               <div className={styles.studySkills}>
-                <span>{t('Skills')}</span>: Full-Stack Development • Laravel • React.js • TypeScript •
-                ESLint • SQL • PHPUnit • JavaScript • Scrum • SOLID Design Principles
+                <span>{t('Skills')}</span>: Full-Stack Development • Laravel • React.js • TypeScript
+                • ESLint • SQL • PHPUnit • JavaScript • Scrum • SOLID Design Principles
               </div>
             </div>
             <div className={styles.features}>
@@ -310,8 +323,8 @@ export const CvPage = () => {
                 </a>
               </div>
               <div className={styles.studyDescription}>
-                <span>{t('Specialization')}:</span> "Information protection in computer systems and
-                networks"
+                <span>{t('Specialization')}:</span> &quot;Information protection in computer systems
+                and networks&quot;
               </div>
             </div>
           </section>
@@ -326,13 +339,18 @@ export const CvPage = () => {
                   <li>{t('Debugged and resolved application issues')};</li>
                   <li>{t('Wrote phpunit tests with coverage report')};</li>
                   <li>
-                    {t('Discussed project structure and DB design with the customer on a regular basis')};
+                    {t(
+                      'Discussed project structure and DB design with the customer on a regular basis'
+                    )}
+                    ;
                   </li>
                   <li>{t('Communication with remote team')};</li>
                   <li>{t('Refactored existing codebase, applied best practices')};</li>
                 </ul>
               </div>
-              <div>{t('Tech Stack')}: Laravel, VueJs, AWS, PostgreSQ</div>
+              <div className={styles.techStack}>
+                {t('Tech Stack')}: Laravel, VueJs, AWS, PostgreSQ
+              </div>
             </div>
             <div className={styles.features}>
               <h3 className={styles.subTitle}>Senior Back-End {t('Developer')}, Tech Lead</h3>
@@ -346,30 +364,72 @@ export const CvPage = () => {
                   <li>{t('Wrote back-end code with PHPUnit tests coverage')}.</li>
                 </ul>
               </div>
-              <div>{t('Tech Stack')}: Laravel, VueJs, PostgreSQL, ELK, MongoDb</div>
+              <div className={styles.techStack}>
+                {t('Tech Stack')}: Laravel, VueJs, PostgreSQL, ELK, MongoDb
+              </div>
             </div>
             <div className={styles.features}>
               <h3 className={styles.subTitle}>Senior Full-Stack {t('Developer')}</h3>
               <div className={styles.experienceCompany}>{t('Big corporate client')}</div>
               <div>
-                {t('VIP contact center project, interacting with various external APIs (financial, personal, legal, credit opportunities, opportunities in airports, and so on)')}
+                {t(
+                  'VIP contact center project, interacting with various external APIs (financial, personal, legal, credit opportunities, opportunities in airports, and so on)'
+                )}
                 <ul className={styles.checkedList}>
                   <li>{t('Coordinated the technical specifications with the customer')};</li>
                   <li>{t('Drew up a logical and visual scheme of the application')};</li>
                   <li>{t('Work with user flow')}</li>
-                  <li>{t('Wrote back-end and front-end code, wrote base documentation for users')};</li>
+                  <li>
+                    {t('Wrote back-end and front-end code, wrote base documentation for users')};
+                  </li>
                   <li>{t('Interaction with the information security department')};</li>
                 </ul>
               </div>
-              <div>{t('Tech Stack')}: Laravel, VueJs, Bootstrap 4, PostgreSQL, ELK, MongoDb</div>
+              <div className={styles.techStack}>
+                {t('Tech Stack')}: Laravel, VueJs, Bootstrap 4, PostgreSQL, ELK, MongoDb
+              </div>
             </div>
             <div className={styles.features}>
               <h3 className={styles.subTitle}>Frontend {t('Developer')}</h3>
-              <div className={styles.experienceCompany}>"Clockwise"</div>
+              <div className={styles.experienceCompany}>&quot;Clockwise&quot;</div>
               <div>{t('Canadian mortgage broker')}</div>
               <div>{t('Tech Stack')}: Bootstrap 4, JavaScript, NodeJs, AWS, Zoho, Mailchimp</div>
             </div>
           </section>
+
+          <section className={styles.section}>
+            <h2 className={` ${styles.title} ${styles.expectationsBorder} `}>
+              <img
+                  src="https://www.linkpicture.com/q/expectations.svg"
+                  alt={t('My expectations for a new project') || ''}
+                  className={` ${styles.logo} ${styles.textColorPrimaryMedium} `}
+              />
+              &nbsp;
+              {t('My expectations for a new project')}
+            </h2>
+            <div className={styles.features}>
+               <ul className={styles.checkedList}>
+                <li>{t('Long term project')};</li>
+                <li>{t('Teamwork')};</li>
+                <li>Laravel + React + Typescript ({t('I will consider also other options')});</li>
+              </ul>
+            </div>
+            <div className={styles.features}>
+              <h3 className={styles.subTitle}>{t('The list of important for me first questions that I ask a recruiter')}:</h3>
+              <ul className={styles.checkedList}>
+                <li>{t('What is the composition of the team')}?</li>
+                <li>{t('How is the communication in the team')}?</li>
+                <li>{t('What technologies are used in the project')}?</li>
+                <li>{t('What is the duration of the project')}?</li>
+                <li>{t('What are your recruiting stages for this position')}?</li>
+                <li>{t('What type of employment contract is planned')}?</li>
+                <li>{t('What compensation package does someone in your company earn with experience like mine')}?</li>
+              </ul>
+            </div>
+          </section>
+            <a href="#header"  className={` ${styles.toTopBtnContainer} ${scrollDirection !== 'down' ? styles.hide : 'show'} `}>
+              <div className={styles.arrow}></div>
+            </a>
         </div>
       </main>
     </div>

@@ -14,6 +14,12 @@ export const useScrollDirection = () => {
         (scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)
       ) {
         setScrollDirection(direction);
+
+        if (direction === 'up') {
+          setTimeout(() => {
+            setScrollDirection('down');
+          }, 2000);
+        }
       }
       lastScrollY = scrollY > 0 ? scrollY : 0;
     };

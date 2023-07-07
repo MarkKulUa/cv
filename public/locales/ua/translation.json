@@ -166,5 +166,17 @@
   "Work with user flow": "Робота з потоком користувачів",
   "Wrote back-end and front-end code, wrote base documentation for users": "Написав бек-енд і інтерфейсний код, написав базову документацію для користувачів",
   "Wrote back-end code with PHPUnit tests coverage": "Написав внутрішній код із покриттям тестів PHPUnit",
-  "Wrote phpunit tests with coverage report": "Написав тести phpunit зі звітом про покриття"
+  "Wrote phpunit tests with coverage report": "Написав тести phpunit зі звітом про покриття",
+  "How is the communication in the team": "Яка комунікація в команді",
+  "I will consider also other options": "Розгляну також інші варіанти",
+  "Long term project": "Довгостроковий проект",
+  "My expectations for a new project": "Мої очікування від нового проекту",
+  "Teamwork": "Командна робота",
+  "The list of important for me first questions that I ask a recruiter": "Список важливих для мене перших питань, які я ставлю рекрутеру",
+  "What are your recruiting stages for this position": "На яких етапах ви підбираєте персонал на цю посаду?",
+  "What compensation package does someone in your company earn with experience like mine": "Який компенсаційний пакет отримує хтось у вашій компанії з таким досвідом, як мій",
+  "What is the composition of the team": "Який склад команди",
+  "What is the duration of the project": "Яка тривалість проекту",
+  "What technologies are used in the project": "Які технології використовуються в проекті",
+  "What type of employment contract is planned": "Який вид трудового договору планується"
 }

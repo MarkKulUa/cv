@@ -27,6 +27,7 @@ export const Select = ({ options, onChange, defaultValue = '' }: LangSwotcherTyp
   const handleChangeLang = (val: string) => {
     onChange(val);
     setSelectedVal(val);
+    setOpenList(!isOpenList);
   };
 
   return (

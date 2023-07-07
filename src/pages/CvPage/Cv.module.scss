@@ -229,6 +229,12 @@ header {
       text-decoration-style: solid;
     }
   }
+
+  .logo {
+    fill: $color-primary;
+    width: 32px;
+    max-height: 29px;
+  }
 }
 
 .title {
@@ -275,8 +281,14 @@ header {
   }
 }
 
-.checkedList li {
-  margin-bottom: 5px;
+.checkedList {
+  padding: 10px;
+
+  li {
+    margin-bottom: 5px;
+    @include font($size: 2.3rem, $height: 22px, $style: normal, $weight: 500);
+
+  }
 }
 
 .features li {
@@ -319,7 +331,7 @@ header {
   }
 }
 
-.studySkills {
+.studySkills, .techStack {
   @include font($size: 1.5rem, $height: 14px, $style: normal, $weight: 500);
   color: $color-text-title-light;
   margin-bottom: 5px;
@@ -328,6 +340,7 @@ header {
 .studyImg img {
   height: 100px;
   margin-right: 10px;
+  margin-bottom: 15px;
 
   &:hover {
     position: absolute;
@@ -361,5 +374,44 @@ header {
 
   @include media-mobile {
     display: none;
+  }
+}
+
+.textColorPrimaryMedium {
+  color: $color-primary-medium;
+}
+
+.expectationsBorder {
+  border-bottom: 1px solid $color-primary-medium;
+}
+
+.toTopBtnContainer {
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 50%;
+  background-color: $color-primary-medium-light;
+  display: inline-block;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+
+    &:hover {
+      transform: translateY(15%) scale(1.25);
+      transition: transform 0.5s ease-out;
+
+      @include media-mobile {
+        transform: translateX(5%) scale(1.15);
+      }
+    }
+
+  .arrow {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+    position: absolute; width: 1em; height: 1em; background-size: contain;
+    transform: rotate(-90deg);
+    top: 20%;
+    left: 30%;
+  }
+  .arrow:nth-child(2){
+    top: 42%;
   }
 }
