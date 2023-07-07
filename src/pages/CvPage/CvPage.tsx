@@ -16,8 +16,7 @@ export const CvPage = () => {
 
   return (
     <div  id="top">
-      <header className={`${scrollDirection === 'down' ? styles.hide : 'show'}`}>
-        <div className={styles.fioWrapper}>
+      <header className={`${scrollDirection === 'down' ? styles.hide : 'show'} ${styles.fioWrapper}`}>
           <div className={styles.fioContainer}>
             <h1 className={styles.cvTitle}>{t('Mark Kulishov')}</h1>
             <div className={styles.cvSubtitle}>
@@ -46,7 +45,7 @@ export const CvPage = () => {
               </div>
             </div>
           </div>
-          <div className={styles.avatarContainer}>
+          <div className={styles.fotoContainer}>
             <img className="vcard__avatar u-photo" src={MarkInfo.photo} alt={MarkInfo.name} />
           </div>
           <div className={styles.languageWrapper}>
@@ -60,7 +59,6 @@ export const CvPage = () => {
               <LangSwitcher />
             </div>
           </div>
-        </div>
       </header>
       <main className={styles.cvWrapper}>
         <div className={styles.contentWrapper}>
