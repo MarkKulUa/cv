@@ -1,6 +1,9 @@
-# GraphiQL App
+# CV and GraphiQL App
 
-<img src="public/screenshot_home.png" alt="screenshot"/>
+## Deploy (demo)
+ Cv: [link](https://rs-graphiql-app.netlify.app/cv)
+
+ GraphiQL: [link](https://rs-graphiql-app.netlify.app)
 
 ## Getting Started
 
