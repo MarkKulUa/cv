@@ -111,7 +111,7 @@ export const Register = () => {
           <CustomButton type="submit" name="submit" text="Submit" />
           <p className={styles.haveAccauntText}>
             {t('Have an account')}?{' '}
-            <Link to="/sign-in" className={styles.authSubLink}>
+            <Link to="/graphql/sign-in" className={styles.authSubLink}>
               {t('Sign In')}
             </Link>{' '}
             {t('now')}.

@@ -1,4 +1,6 @@
 import { ICardFeature, ICvStudyCard, TAppLanguage } from './types';
+import markPhoto from './assets/img/mark_work4.png';
+
 
 export const DEFAULT_LANGUAGE: TAppLanguage = 'en';
 export const LOCALES: { [key in TAppLanguage]: string } = {
@@ -12,7 +14,7 @@ export const MarkInfo = {
   description:
     'Full Stack Developer | ReactJs | VueJs | PHP | Laravel. Proactive and motivated web dev.',
   social: 'https://www.linkedin.com/in/mark-kulishov-85140b1b5/',
-  photo: 'https://www.linkpicture.com/q/1667212723497.jpeg',
+  photo: markPhoto,
 };
 
 export const FeaturesData_1: ICardFeature[] = [

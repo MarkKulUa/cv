@@ -11,5 +11,10 @@ export default defineConfig({
       enabled: true,
       reporter: ['text']
     },
-  }
-})
+  },
+  server: {
+    watch: {
+      ignored: ['**/node_modules/**', '**/.git/**', '**/dist/**'],
+    },
+  },
+});

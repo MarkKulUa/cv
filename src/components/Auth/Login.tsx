@@ -91,7 +91,7 @@ export const Login = () => {
           <CustomButton type="submit" name="submit" text={t('Submit')} />
           <p className={styles.haveAccauntText}>
             {t("Don't have an account")}?{' '}
-            <Link to="/sign-up" className={styles.authSubLink}>
+            <Link to="/graphql/sign-up" className={styles.authSubLink}>
               {t('Sign Up')}
             </Link>{' '}
             {t('now')}.

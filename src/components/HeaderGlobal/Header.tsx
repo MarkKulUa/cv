@@ -35,7 +35,7 @@ export const Header = () => {
         <div className={styles.logoContainer}>
           <Logo className={styles.logo} />
           <span>
-            <Link className={styles.homeNav} to="/">
+            <Link className={styles.homeNav} to="/graphql">
               GraphiQL
             </Link>
           </span>
@@ -64,10 +64,10 @@ export const Header = () => {
             </>
           ) : (
             <div className={styles.authContainer}>
-              <Link className={styles.auth} to="/sign-in">
+              <Link className={styles.auth} to="/graphql/sign-in">
                 {t('Sign In')}
               </Link>
-              <Link className={styles.auth} to="/sign-up">
+              <Link className={styles.auth} to="/graphql/sign-up">
                 {t('Sign Up')}
               </Link>
             </div>

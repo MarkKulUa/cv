@@ -23,7 +23,7 @@ export function MobileMenu() {
         <div className={styles.logoContainer} onClick={() => setOpenMobileMenu(false)}>
           <Logo className={styles.logo} />
           <span>
-            <Link className={styles.homeNav} to="/">
+            <Link className={styles.homeNav} to="/graphql">
               GraphiQL
             </Link>
           </span>
@@ -52,10 +52,10 @@ export function MobileMenu() {
             </>
           ) : (
             <div className={styles.authContainer}>
-              <Link className={styles.auth} to="/sign-in" onClick={() => setOpenMobileMenu(false)}>
+              <Link className={styles.auth} to="/graphql/sign-in" onClick={() => setOpenMobileMenu(false)}>
                 {t('Sign In')}
               </Link>
-              <Link className={styles.auth} to="/sign-up" onClick={() => setOpenMobileMenu(false)}>
+              <Link className={styles.auth} to="/graphql/sign-up" onClick={() => setOpenMobileMenu(false)}>
                 {t('Sign Up')}
               </Link>
             </div>
